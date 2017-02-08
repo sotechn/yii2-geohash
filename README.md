@@ -2,7 +2,7 @@
 
 ## Description
 
-	Generate geohash, it is a hierarchical spatial data structure which subdivides space into buckets of grid shape, which is one of the many applications of what is known as a Z-order curve, and generally space-filling curves. See more https://en.wikipedia.org/wiki/Geohash
+Generate geohash, it is a hierarchical spatial data structure which subdivides space into buckets of grid shape, which is one of the many applications of what is known as a Z-order curve, and generally space-filling curves. See more https://en.wikipedia.org/wiki/Geohash
 
 ## Getting Started
 
@@ -10,7 +10,7 @@
 
 	composer require sotechn/yii2-geohash
 
-	or add you composer.json
+or add you composer.json
 
 	"require": {
 		...
@@ -19,13 +19,15 @@
 
 ### System Requirements
 
-	You need **PHP >= 5.4.0**, **Yii ~ 2.0.4**
+You need **PHP >= 5.4.0**, **Yii ~ 2.0.4**
 
 ### Usage
 
+in your config file
+
 	/congig/web.php
 
-	added component:
+added component:
 
 	'components' => [
 		...
@@ -34,11 +36,11 @@
 		],
 	]
 
-	after added use
+after you've added it, you can use it as
 
 	$hash = Yii::$app->geohash->encode($longitude, $latitude, $prec);
 
-	and you can also use behavior with his model
+and you can also use behavior with his model
 
 	public function behaviors()
     {
@@ -48,7 +50,7 @@
         ];
     }
 
-	you can specify their fields to be used and precision that you use in your default project:
+you can specify their fields to be used and precision that you use in your default project:
 
 	[
 		'class' => \sotechn\geohash\behaviors\Geohash::className(),
