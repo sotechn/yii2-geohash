@@ -48,11 +48,11 @@ class Geohash extends \yii\base\Behavior {
 	 */
 	public function beforeSave() {
 
-		$lng = $this->owner->{$this->fieldLng};
-		$lat = $this->owner->{$this->fieldLat};
+		$lng = $this->owner->getAttribute($this->fieldLng);
+		$lat = $this->owner->getAttribute($this->fieldLat);
 
 		if ($lat && $lng) {
-			$this->owner->{$this->fieldHash} = (new \sotechn\geohash\Geohash())->encode($lng, $lat, $this->defaultPrec);
+			$this->owner->setAttribute($this->fieldHash, (new \sotechn\geohash\Geohash())->encode($lng, $lat, $this->defaultPrec));
 		}
 	}
 
