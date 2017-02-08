@@ -1,0 +1,25 @@
+{
+	"name": "sotechn/yii2-geohash",
+	"type": "yii2-extension",
+	"description": "geohash like python-geohash",
+	"keywords": ["geohash", "yii2", "sotechn", "yii 2"],
+	"homepage": "http://github.com/sotechn/yii2-geohash",
+	"license": "BSD-3-Clause",
+	"authors": [
+		{
+			"name": "Mikhail Saprykin",
+			"email": "git@so-technology.ru",
+			"homepage": "https://github.com/sotechn",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"yiisoft/yii2": "~2.0",
+		"lvht/geohash": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"sotechn\\geohash\\": "src"
+		}
+	}
+}
