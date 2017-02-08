@@ -10,7 +10,7 @@ Generate geohash, it is a hierarchical spatial data structure which subdivides s
 
 	composer require sotechn/yii2-geohash
 
-or add you composer.json
+or add your composer.json
 
 	"require": {
 		...
@@ -36,11 +36,11 @@ added component:
 		],
 	]
 
-after you've added it, you can use it as
+after you've added it, you can use it
 
 	$hash = Yii::$app->geohash->encode($longitude, $latitude, $prec);
 
-and you can also use behavior with his model
+and you can also use behavior with model
 
 	public function behaviors()
     {
@@ -54,9 +54,9 @@ you can specify their fields to be used and precision that you use in your defau
 
 	[
 		'class' => \sotechn\geohash\behaviors\Geohash::className(),
-		'fieldLng' => 'longitude', // default **lng**
-		'fieldLat' => 'latitude', // default **ltd**
-		'fieldHash' => 'hash', // default **geohash**
-		'defaultPrec' => '0.00000001', // deefault **0.00001**
+		'fieldLng' => 'longitude', // default 'lng'
+		'fieldLat' => 'latitude', // default 'ltd'
+		'fieldHash' => 'hash', // default 'geohash'
+		'defaultPrec' => '0.00000001', // default 0.00001
 	]
 
