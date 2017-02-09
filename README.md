@@ -1,4 +1,4 @@
-# Yii-2 GeoHash
+# Yii-2 Geohash
 
 ## Description
 
